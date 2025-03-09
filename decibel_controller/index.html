@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Controlador de Decibelios</title>
+    <link href="https://fonts.googleapis.com/css?family=Economica:regular,italic,700,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <script>
+        Swal.fire({
+            icon: "info",
+            title: "Introduce tu nombre",
+            text: "No te vamos a hackear...",
+            input: "text",
+            inputAttributes: {
+                autocapitalize:"sentences"
+            },
+            footer: '<a href="#>Politica de privacidad</a>'
+});    
+    </script>
+    <h1 class="title">Medir decibelios</h1>
+    <h2 class="subtitle">Viva la cerveza</h2>
+    <button id="btn" type="button" class="btn_a">Medir</button>
+    <button disabled="disabled" id="stop" class="btn_a">Parar</button>
+    
+    <div class="result" id="result">
+        <p id="textcontainer" class="p">Estas oyendo <span id="text" class="span">-</span> dB</p>
+        <!-- <p id="minvalcontainer">Minimo de decibelios que has oido: <span id="minval">-</span> dB</p> -->
+        <p id="maxvalcontainer" class="p">Maximo de decibelios que has oido: <span id="maxval" class="span">-</span> dB</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
