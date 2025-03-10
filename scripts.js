@@ -3,6 +3,7 @@ var stopBtn = document.getElementById("stop").addEventListener('click', stopProc
 var result = document.getElementById("text");
 var maxval = document.getElementById("maxval");
 var minval = document.getElementById("minval");
+var control = document.getElementById("control");
 var audioContext, analyser, microphone, dataArray, stream, animationFrameId;
 var maxDecibels = -Infinity; // Max value
 
@@ -30,6 +31,14 @@ function startProcess() {
                 if (decibels > maxDecibels) {
                     maxDecibels = decibels;
                     maxval.innerHTML = `${maxDecibels.toFixed(2)}`;
+                }
+
+                if(decibels > 70) {
+                    control.style.backgroundColor = "#f2ec2e";
+                }
+
+                if (decibels > 90) {
+                    control.style.backgroundColor = "#e82020";
                 }
 
                 animationFrameId = requestAnimationFrame(getDecibels);
