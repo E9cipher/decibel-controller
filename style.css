@@ -68,7 +68,7 @@ body .column2 div.dangercolumn {
     display: block;
 }
 
-body .column2 div.dangercolumn .control {
+body .column2 .control {
     width: 250px;
     height: 70px;
     background-color: #ccc;
