@@ -7,11 +7,15 @@ body {
     padding: 5px;
     background-color: #f2f3f4;
     font-family: 'Roboto', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-body .column .title, .subtitle {
+body main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+body header .title, .subtitle {
     font-size: 70px;
     font-family: 'Economica', sans-serif;
     font-weight: 500;
@@ -23,7 +27,7 @@ body .column .title, .subtitle {
     text-decoration-style: wavy;
 }
 
-body .column .subtitle {
+body header .subtitle {
     font-size: 50px;
     text-decoration: none;
     margin-bottom: 15px;
@@ -31,7 +35,19 @@ body .column .subtitle {
     text-decoration: line-through;
 }
 
-body .column .btn_a {
+body main .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body main .column .btncontainer {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+body main .column .btncontainer .btn_a {
     padding: 5px;
     border: 3px solid transparent;
     border-radius: 3px;
@@ -42,35 +58,44 @@ body .column .btn_a {
     font-size: 20px;
 }
 
-body .column .btn_a:hover {
+body main .column2 .btncontainer .btn_a:hover {
     background-color: rgba(255, 0, 13, 0.7);
     border: 3px solid rgb(41, 41, 255)
 }
 
-body .column div.result {
+body main .column div.result {
     border: 2px solid black;
     border-radius: 5px;
     padding: 7px;
-    min-width: 30%;
-    width: 40%;
-    max-width: 65%;
+    width: 100%;
 }
 
-body .column div.result .p {
+body main .column div.result .p {
     display: block;
 }
 
-body .column div.result .p .span {
+body main .column div.result .p .span {
     font-weight: bold;
 }
 
-body .column2 div.dangercolumn {
-    display: block;
+body main div.column2 {
+    display: flex;
+    justify-content: center;
 }
 
-body .column2 .control {
-    width: 250px;
-    height: 70px;
+body main div.column2 .things {
+    display: block;
+    width: 100%;
+}
+
+body main div.column2 .things p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+body main .column2 .things .control {
+    width: 200px;
+    height: 20px;
     background-color: #ccc;
 }
 
