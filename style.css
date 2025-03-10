@@ -8,7 +8,7 @@ body {
     background-color: #f2f3f4;
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 body .column .title, .subtitle {
