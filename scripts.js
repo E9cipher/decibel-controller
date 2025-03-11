@@ -33,7 +33,11 @@ function startProcess() {
                     maxval.innerHTML = `${maxDecibels.toFixed(2)}`;
                 }
 
-                if(decibels > 70) {
+                if (decibels < 70) {
+                    control.style.backgroundColor = "#20e820";
+                }
+
+                if(decibels > 70 && decibels < 90) {
                     control.style.backgroundColor = "#f2ec2e";
                 }
 
