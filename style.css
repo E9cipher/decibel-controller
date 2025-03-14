@@ -45,7 +45,7 @@ body main .column {
     padding: 10px 17px;
     min-width: 400px;
     min-height: 200px;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
 }
 
