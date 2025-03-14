@@ -58,7 +58,7 @@ body main .column .btncontainer .btn_a {
     font-size: 20px;
 }
 
-body main .column .btncontainer .btn_a:hover {
+body main .column .btncontainer .btn_a:hover:not([disabled]){
     background-color: rgba(255, 0, 13, 0.7);
     border: 3px solid rgb(41, 41, 255)
 }
