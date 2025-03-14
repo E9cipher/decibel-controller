@@ -95,22 +95,17 @@ body main .column div.result .p .span {
     font-weight: bold;
 }
 
-body main div.column2 {
-    display: flex;
-    justify-content: center;
-}
-
-body main div.column2 .things {
+body main div.column .things {
     display: block;
     width: 100%;
 }
 
-body main div.column2 .things p {
+body main div.column .things p {
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-body main .column2 .things .control {
+body main .column .things .control {
     width: 200px;
     height: 20px;
     background-color: #ccc;
